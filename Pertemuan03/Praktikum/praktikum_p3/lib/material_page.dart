@@ -55,7 +55,6 @@ class BiggerText extends StatefulWidget {
 class _BiggerTextState extends State<BiggerText> {
   double _textSize = 16.0;
 
-
   @override
   Widget build(BuildContext context) {
     return Column(
