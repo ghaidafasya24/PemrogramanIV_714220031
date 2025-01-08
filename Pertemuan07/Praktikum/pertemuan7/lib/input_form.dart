@@ -8,7 +8,7 @@ class MyInputForm extends StatefulWidget {
 
 class _MyInputFormState extends State<MyInputForm> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  TextEditingController _controllerEmail = TextEditingController();
+  TextEditingController  _controllerEmail = TextEditingController();
   TextEditingController _controllerNama = TextEditingController();
   final List<Map<String, dynamic>> _myDataList = [];
   Map<String, dynamic>? editedData;
