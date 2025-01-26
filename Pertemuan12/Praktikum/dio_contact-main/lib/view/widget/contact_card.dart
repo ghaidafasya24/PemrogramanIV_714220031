@@ -29,7 +29,7 @@ class ContactCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            if (ctRes.insertedId != null) _buildDataRow('ID', ctRes.insertedId),
+          if (ctRes.insertedId != null) _buildDataRow('ID', ctRes.insertedId),
             _buildDataRow('Message', ctRes.message),
             _buildDataRow('Status', ctRes.status),
           ],

@@ -76,5 +76,15 @@ class ApiServices {
     }
   }
 
-  Future deleteContact(String id) async {}
+  Future deleteContact(String id) async {
+    try {
+      final response = await Dio().delete('$_baseUrl/delete/$id');
+      if (response.statusCode == 200) {
+        return ContactResponse.fromJson(response.data);
+      }
+      return null;
+    } catch (e) {
+      rethrow;
+    }
+  }
 }
